@@ -57,7 +57,7 @@ app.post('/register', async (req,res)=>{
 app.post('/login', passport.authenticate('local', {
   sucessRedirect: '/secret',
   failureRedirect: 'login',
-  failureFlash: true,
+  //failureFlash: true,
 }))
 
 app.get("/logout", (req, res)=> {
